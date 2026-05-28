@@ -55,8 +55,6 @@ Joining across relational tables, I extracted meaningful patterns - identifying 
 2. [Top Paying Skills](.\02_top_paying_skills.sql) – Analyzes the 25 highest-paying skills with salary and demand metrics  
 3. [Optimal Skills](.\03_optimal_skills.sql) – Calculates an optimal score using natural log of demand combined with median salary to identify the most valuable skills to learn  
 
-<br>
-
 💡**Key Insights**  
 - SQL and Python are the clear foundations of the field, each appearing in roughly 29,000 job postings.
 - Cloud fluency - particularly AWS and Azure - has become a baseline expectation for modern roles.
