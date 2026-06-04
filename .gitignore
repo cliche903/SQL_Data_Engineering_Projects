@@ -3,3 +3,5 @@
 .bash_history
 .vscode
 Lessons/
+*.duckdb
+Data/
