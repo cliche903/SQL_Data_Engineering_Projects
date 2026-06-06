@@ -129,3 +129,7 @@ Priority role tracking with incremental updates using MERGE operations
 - **Type Safety:** Proper data type definitions (`VARCHAR`, `INTEGER`, `DOUBLE`, `BOOLEAN`, `TIMESTAMP`)  
 - **Schema Organization:** Separate schemas (`flat_mart`, `skills_mart`, `priority_mart`) for logical separation  
 - **Error Handling:** Structured script execution with clear error messages and progress reporting  
+
+## 🔭Future Improvements  
+Create a `job_title_dim` **dimension table:** Currently, `priority_roles` is joined to `job_postings_fact` on `job_title_short` = `role_name`, linking two columns that represent the same concept but have no shared surrogate key. A proper `job_title_dim` table with a stable `job_title_id` would allow all marts to join cleanly on a single key, improving consistency and making the model easier to maintain as new roles are added
+
