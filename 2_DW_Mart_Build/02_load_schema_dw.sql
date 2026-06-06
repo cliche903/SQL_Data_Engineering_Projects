@@ -1,7 +1,6 @@
--- Step 2: DW - Load Data from CSV files into tables
+-- Step 2: DW - Load Data from CSV Files into Tables
 
 SELECT '=== Loading company_dim Table ===' AS info;
-
 INSERT INTO company_dim (company_id, name)
 SELECT company_id, name
 FROM 
@@ -17,7 +16,6 @@ FROM
     AUTO_DETECT = TRUE);
 
 SELECT '=== Loading job_postings_fact Table ===' AS info;
-
 INSERT INTO job_postings_fact (
     job_id, company_id, job_title_short, job_title, job_location,
     job_via, job_schedule_type, job_work_from_home, search_location,
@@ -34,7 +32,6 @@ FROM
     AUTO_DETECT = TRUE);
 
 SELECT '=== Loading skills_job_dim Table ===' AS info;
-
 INSERT INTO skills_job_dim (skill_id, job_id)
 SELECT skill_id, job_id
 FROM 
