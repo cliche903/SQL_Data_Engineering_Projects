@@ -1,11 +1,11 @@
-# 📈 Exploratory Data Analysis with SQL: Job Market Analytics
+# 📈SQL Analysis: Data Job Market Analytics
 
 ![Alt Text](Images/EDA_w_SQL.png)
 
 Real-world SQL analysis of the data engineering job market - **translating raw job posting data into actionable insights through production-quality queries and business-driven problem framing**.
 
 
-## 📝 Objective (For Hiring Managers)
+## 📝Objective (For Hiring Managers)
 ☑️ Scope - Developed 3 analytical queries addressing key questions about the data engineering job market  
 ☑️ Data modeling - Joined fact and dimension tables to build a clean, query-ready foundation for analysis  
 ☑️ Analytics - Used aggregations, filtering, and sorting logic to find top skills by demand, salary, and overall value  
@@ -18,7 +18,7 @@ If you only have a minute, please review these:
 [03_optimal_skills](03_optimal_skills.sql) - Combined demand/salary optimization query
 
 
-## ❓ Problem & Context
+## ❓Problem & Context
 
 Job market analysts need to answer questions like:
 
@@ -41,7 +41,7 @@ This project analyzes a **data warehouse** built using a star schema design. The
 Joining across relational tables, I extracted meaningful patterns - identifying which skills are most in demand, which drive the highest salaries, and which combinations offer the best overall return for data engineers.  
 
 
-## 🧰 Tech Stack
+## 🧰Tech Stack
 📍 **Query Engine**: DuckDB for fast OLAP-style analytical queries  
 📍 **Language**: SQL (ANSI-style with analytical functions)  
 📍 **Data Model**: Star schema with fact + dimension + bridge tables  
@@ -49,7 +49,7 @@ Joining across relational tables, I extracted meaningful patterns - identifying 
 📍 **Version Control**: Git/GitHub for versioned SQL scripts
 
 
-## 📊 Analysis Overview
+## 📊Analysis Overview
 🧱 **Query Structure**  
 1. [Top Demanded Skills](.\01_top_demanded_skills.sql) – Identifies the 10 most in-demand skills for remote data engineer positions  
 2. [Top Paying Skills](.\02_top_paying_skills.sql) – Analyzes the 25 highest-paying skills with salary and demand metrics  
@@ -61,7 +61,7 @@ Joining across relational tables, I extracted meaningful patterns - identifying 
 - Infrastructure tools like Kubernetes, Docker, and Terraform signal seniority and tend to command higher salaries, while Apache Spark remains a high-value skill with both strong demand and strong pay.
 
 
-## 👨‍💻 SQL Skills Demonstrated
+## 👨‍💻SQL Skills Demonstrated
 
 ### **Query Design & Optimization**
 
