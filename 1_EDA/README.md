@@ -5,7 +5,7 @@
 Real-world SQL analysis of the data engineering job market - **translating raw job posting data into actionable insights through production-quality queries and business-driven problem framing**.
 
 
-## 📝Objective (For Hiring Managers)
+## 📝Project Objectives (For Hiring Managers)
 ☑️ Scope - Developed 3 analytical queries addressing key questions about the data engineering job market  
 ☑️ Data modeling - Joined fact and dimension tables to build a clean, query-ready foundation for analysis  
 ☑️ Analytics - Used aggregations, filtering, and sorting logic to find top skills by demand, salary, and overall value  
