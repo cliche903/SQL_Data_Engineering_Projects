@@ -1,4 +1,4 @@
-# 📈SQL Analysis: Data Job Market Analytics
+# 📈SQL Analysis of the Data Job Market
 
 ![Alt Text](Images/EDA_w_SQL.png)
 
