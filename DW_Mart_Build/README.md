@@ -1,7 +1,7 @@
 # 🏪Data Warehouse & Mart Build: Production ETL Pipeline
 
 ## 📖Overview 
-This project walks through building a complete data engineering pipeline — from raw CSV files in Google Cloud Storage to a normalized star schema data warehouse, culminating in analytical data marts for BI and reporting.
+This project walks through building a complete data engineering pipeline - from raw CSV files in Google Cloud Storage to a normalized star schema data warehouse, culminating in analytical data marts for BI and reporting.
 
 ## 🗂️Project Objectives
 ☑️ **Pipeline scope:** Built a complete ETL pipeline from raw CSVs to star schema warehouse to analytical marts  
@@ -13,13 +13,13 @@ This project walks through building a complete data engineering pipeline — fro
 
 **The Problem**  
 
-Raw job posting data lands as flat CSV files in Google Cloud Storage — unstructured and not built for analytical queries. Business questions like these can't be answered reliably without a proper data foundation:
+Raw job posting data lands as flat CSV files in Google Cloud Storage - unstructured and not built for analytical queries. Business questions like these can't be answered reliably without a proper data foundation:
 
 - Which skills are most in demand, and how is that shifting over time?  
 - What do hiring trends look like by company and location?  
 - How do salaries vary across roles and skill sets?
 
-Without a single source of truth, analysis becomes inconsistent and hard to scale. And for high-frequency queries — skill demand breakdowns, priority role tracking, flat reporting — running directly against raw data is slow and expensive.  
+Without a single source of truth, analysis becomes inconsistent and hard to scale. And for high-frequency queries - skill demand breakdowns, priority role tracking, flat reporting - running directly against raw data is slow and expensive.  
 
 **The Solution**
 
@@ -48,9 +48,9 @@ An end-to-end ETL pipeline that pulls CSVs from Google Cloud Storage, normalizes
 └── README.md                           #📍You Are Here 
 ```
 
-## 🧱Pipeline Architecture
-
+## 🧱Pipeline Architecture  
 Raw job posting CSVs from Google Cloud Storage flow through a normalized star schema warehouse and into specialized analytical data marts, ready for consumption by BI tools like Excel, Power BI, Tableau, and Python.
+
 ![Alt Text](Images/Project2_Data_Pipeline.png)
 
 ### Data Warehouse
@@ -61,7 +61,7 @@ The data warehouse implements a star schema with `company_dim`, `skills_dim`, `j
 - **SQL Files:**
   - [`01_create_tables_dw.sql`](./01_create_tables_dw.sql) 
   - [`02_load_schema_dw.sql`](./02_load_schema_dw.sql) 
-- **Purpose:** Extracts CSVs from GCS and loads them into a star schema warehouse — the single source of truth for all analytical queries
+- **Purpose:** Extracts CSVs from GCS and loads them into a star schema warehouse - the single source of truth for all analytical queries
 - **Grain:** One row per job posting in the fact table (`job_postings_fact`)
 
 ### Flat Mart
@@ -108,7 +108,7 @@ Priority role tracking with incremental updates using MERGE operations
 ### Dimensional Modeling
 
 - **Star Schema Design:** Fact table (`job_postings_fact`) with dimension tables (`company_dim`, `skills_dim`)  
-- **Bridge Tables:** Many-to-many relationship handling (`skills_job_dim`)  
+- **Bridge Table:** Many-to-many relationship handling (`skills_job_dim`)  
 - **Grain Definition:** Proper fact table granularity (skill + month, company + title + location + month)  
 - **Additive Measures:** Counts and sums that can be safely re-aggregated at any level  
 
