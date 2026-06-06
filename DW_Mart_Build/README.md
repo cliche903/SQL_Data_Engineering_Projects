@@ -26,13 +26,13 @@ Without a single source of truth, analysis becomes inconsistent and hard to scal
 An end-to-end ETL pipeline that pulls CSVs from Google Cloud Storage, normalizes them into a star schema data warehouse (separating facts from dimensions), and builds three specialized data marts optimized for distinct use cases: flat queries, skill demand analysis, and priority role tracking.
 
 ## 🧰Tech Stack
-📍**Database:** DuckDB (file-based OLAP database with GCS integration via `httpfs`)  
-📍**Language**: SQL (DDL for schema design, DML for data loading and transformation)  
-📍**Data Model**: Star schema with fact + dimension + bridge tables  
-📍**Development**: VS Code for SQL editing + Terminal for DuckDB CLI  
-📍**Automation:** Master SQL script for pipeline orchestration  
-📍**Version Control**: Git/GitHub for versioned SQL scripts  
-📍**Storage:** Google Cloud Storage for source CSV files
+📌**Database:** DuckDB (file-based OLAP database with GCS integration via `httpfs`)  
+📌**Language**: SQL (DDL for schema design, DML for data loading and transformation)  
+📌**Data Model**: Star schema with fact + dimension + bridge tables  
+📌**Development**: VS Code for SQL editing + Terminal for DuckDB CLI  
+📌**Automation:** Master SQL script for pipeline orchestration  
+📌**Version Control**: Git/GitHub for versioned SQL scripts  
+📌**Storage:** Google Cloud Storage for source CSV files
 
 ## 📂Repository Structure
 
@@ -45,7 +45,7 @@ An end-to-end ETL pipeline that pulls CSVs from Google Cloud Storage, normalizes
 ├── 05_create_priority_mart.sql         # Priority Roles Mart
 ├── 06_update_priority_mart.sql         # Priority Mart Incremental Update (MERGE)
 ├── build_dw_marts.sql                  # Master SQL Build Script
-└── README.md                           #❗You Are Here 
+└── README.md                           #📍You Are Here 
 ```
 
 ## 🧱Pipeline Architecture
