@@ -9,7 +9,7 @@ Real-world SQL analysis of the data engineering job market - **translating raw j
 
 **Skills**: Complex joins, aggregations, analytical functions, data quality validation
 
-## Project 2: [DW_Mart_Build](./DW_Mart_Build) - Data Pipeline - Data Warehouse & Mart
+## Project 2: [DW_Mart_Build](./DW_Mart_Build) - Data Pipeline (Data Warehouse & Mart)
 ![ALT Text](DW_Mart_Build/Images/Project2_Data_Pipeline.png)
 Full ETL pipeline - **transforming raw CSV files into a normalized star schema warehouse and layered analytical data marts**
 
