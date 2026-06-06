@@ -49,6 +49,7 @@ An end-to-end ETL pipeline that pulls CSVs from Google Cloud Storage, normalizes
 ```
 
 ## 🧱Pipeline Architecture
+
 Raw job posting CSVs from Google Cloud Storage flow through a normalized star schema warehouse and into specialized analytical data marts, ready for consumption by BI tools like Excel, Power BI, Tableau, and Python.
 ![Alt Text](Images/Project2_Data_Pipeline.png)
 
