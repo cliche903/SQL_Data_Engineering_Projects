@@ -1,11 +1,11 @@
 # 📈SQL Analysis of the Data Job Market
 
+## 📖Overview
+Real-world SQL analysis of the data engineering job market - **translating raw job posting data into actionable insights through production-quality queries and business-driven problem framing**
+
 ![Alt Text](Images/EDA_w_SQL.png)
 
-Real-world SQL analysis of the data engineering job market - **translating raw job posting data into actionable insights through production-quality queries and business-driven problem framing**.
-
-
-## 📝Project Objectives
+## 🗂️Project Objectives
 ☑️ **Scope:** Developed 3 analytical queries addressing key questions about the data engineering job market  
 ☑️ **Data modeling:** Joined fact and dimension tables to build a clean, query-ready foundation for analysis  
 ☑️ **Analytics:** Used aggregations, filtering, and sorting logic to find top skills by demand, salary, and overall value  
@@ -42,11 +42,11 @@ Joining across relational tables, I extracted meaningful patterns - identifying 
 
 
 ## 🧰Tech Stack
-📍**Query Engine**: DuckDB for fast OLAP-style analytical queries  
-📍**Language**: SQL (ANSI-style with analytical functions)  
-📍**Data Model**: Star schema with fact + dimension + bridge tables  
-📍**Development**: VS Code for SQL editing + Terminal for DuckDB CLI  
-📍**Version Control**: Git/GitHub for versioned SQL scripts
+📌**Query Engine**: DuckDB for fast OLAP-style analytical queries  
+📌**Language**: SQL (ANSI-style with analytical functions)  
+📌**Data Model**: Star schema with fact + dimension + bridge tables  
+📌**Development**: VS Code for SQL editing + Terminal for DuckDB CLI  
+📌**Version Control**: Git/GitHub for versioned SQL scripts
 
 
 ## 📊Analysis Overview
