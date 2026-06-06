@@ -1,9 +1,9 @@
 # 🏪Data Warehouse & Mart Build: Production ETL Pipeline
 
-## 📝Overview 
+## 📖Overview 
 This project walks through building a complete data engineering pipeline — from raw CSV files in Google Cloud Storage to a normalized star schema data warehouse, culminating in analytical data marts for BI and reporting.
 
-## 📝Project Objectives
+## 🗂️Project Objectives
 ☑️ **Pipeline scope:** Built a complete ETL pipeline from raw CSVs to star schema warehouse to analytical marts  
 ☑️ **Data modeling:** Designed a star schema with fact tables, dimensions, and bridge tables for many-to-many relationships  
 ☑️ **ETL development:** Implemented extract, transform, load processes with idempotent operations and data quality checks  
